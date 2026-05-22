@@ -1,4 +1,6 @@
-Commons Clause License Condition v1.0
+# License
+
+## Commons Clause License Condition v1.0
 
 The Software is provided to you by the Licensor under the License,
 as defined below, subject to the following condition.
@@ -25,7 +27,7 @@ Licensor: Ferdinand Engländer
 
 ---
 
-Apache License
+## Apache License
 
 Version 2.0, January 2004
 
