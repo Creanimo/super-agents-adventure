@@ -1,0 +1,14 @@
+[remap]
+
+importer="yarnscript"
+type="Resource"
+uid="uid://dldoy6hr1na5j"
+path="res://.godot/imported/010_FirstSteps.yarn-611543ace98509da057529790bb096b5.tres"
+
+[deps]
+
+source_file="res://dialog/010_FirstSteps.yarn"
+dest_files=["res://.godot/imported/010_FirstSteps.yarn-611543ace98509da057529790bb096b5.tres"]
+
+[params]
+

@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://dv00wu33s85yj"]
+
+[ext_resource type="PackedScene" uid="uid://bv42g323prh5f" path="res://addons/YarnSpinner-Godot/Scenes/DefaultDialogueSystem.tscn" id="1_51b5u"]
+[ext_resource type="Resource" uid="uid://dc7nqsel7i31v" path="res://dialog/SuperAgentsAdventure.yarnproject" id="2_1nq3n"]
+[ext_resource type="Script" uid="uid://c8t832h6wd7xb" path="res://dialog/CommandHandler.cs" id="3_command_handler"]
+
+[node name="YarnSpinnerCanvasLayer" unique_id=350562131 instance=ExtResource("1_51b5u")]
+
+[node name="DialogueRunner" parent="." index="0" unique_id=1412460189]
+yarnProject = ExtResource("2_1nq3n")
+PrintProjectErrors = null
+allowOptionFallthrough = null
+autoStart = true
+startNode = "Globals"
+runSelectedOptionAsLine = null
+
+[node name="LinePresenter" parent="." index="2" unique_id=216920850]
+showCharacterNameInLineView = null
+fadeDownDuration = null
+autoAdvance = null
+autoAdvanceDelay = null
+
+[node name="ColorRect" parent="LinePresenter/PresenterControl/CharacterNameText" parent_id_path=PackedInt32Array(1662101718) index="2" unique_id=1435376450]
+layout_mode = 1
+anchors_preset = 15
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="OptionsPresenter" parent="." index="3" unique_id=13693412]
+showsLastLine = null
+showUnavailableOptions = null
+fadeUpDuration = null
+fadeDownDuration = null
+
+[node name="InMemoryVariableStorage" parent="." index="4" unique_id=189682707]
+showDebug = null
+
+[node name="TextLineProvider" parent="." index="5" unique_id=1335892241]
+textLanguageCode = null
+
+[node name="CommandHandler" type="Node" parent="." index="6" unique_id=23088861]
+script = ExtResource("3_command_handler")

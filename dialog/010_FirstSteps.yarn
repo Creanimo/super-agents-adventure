@@ -1,0 +1,77 @@
+﻿title: Globals
+position: -108,-127
+---
+
+<<declare $merchant_talked_with_006_before = false>>
+
+<<jump LeavingHideoutFirstTime>>
+
+===
+title: LeavingHideoutFirstTime
+position: -85,74
+---
+
+<<slot agent006 3/3>>
+<<pose agent006 shouting_over_shoulder>>
+<<turn agent006 to_start>>
+<<animate_slot agent006 slide_in_from_end while_talking once>>
+006 and a half: Yeah, yeah. I got it. Relax! You are sending your best field agent. #line:0f3efd6 
+<<pose agent006 self_assured>>
+006 and a half: After all, I have never failed a single mission ever... #line:0e25d0d 
+<<pose agent006 timid_looking_down>>
+006 and a half: ...on a Tuesday. #line:0e759c0 
+<<pose agent006 eager_raised_finger>>
+<<animate_slot agent006 quick_bounce before_talking once>>
+006 and a half: Fear not world! The most capable agent of the universe will do his duty with any force possible. #line:08a806f 
+<<pose agent006 happy_walk>>
+<<move_slot agent006 gentle_walk_to 1/3 play_now_without_talking>>
+<<pose agent006 fist_in_the_air>>
+<<turn agent006 to_end>>
+006 and a half: Nothing can stop me... #line:0428e19 
+<<pose agent006 enthusiastic_sweeping_elbow>>
+006 and a half: ...and nothing can top me! #line:0564f29 
+<<pose agent006 thoughtful>>
+006 and a half: Now, what was I supposed to do again? #line:0b7468a 
+
+-> Talk to Fruit Merchant #speaker:agent006 #line:04b9f98 
+  <<jump MerchantGreeting>>
+
+===
+title: MerchantGreeting
+position: 167,260
+---
+
+<<slot agent006 1/3>>
+<<slot merchant 3/3>>
+<<turn merchant to_start>>
+<<if $merchant_talked_with_006_before is false>>
+  <<pose agent006 wave>>
+  <<pose merchant busy>>
+  006 and a half: Hi, fruitman! #line:068780b 
+  <<pose agent006 relaxed_hands_at_hip>>
+  <<pose merchant annoyed>>
+  Merchant: I have told you before: I am a fruit and vegetable merchant. My name is Willie. #line:09119b2 
+  <<pose agent006 thoughtful>>
+  006 and a half: But then the jingle I composed for you doesn't make any sense anymore... #line:0488d64 
+  <<pose agent006 enthusiastic_sweeping_elbow>>
+  <<animate_slot 006 sway_back_and_forth while_talking loop>>
+  <<pose merchant apalled>>
+  006 and a half: (singing) Fruitman, oh, fruitman, is your man for fruit. #line:01534e7 
+  <<pose agent006 eager_raised_finger>>
+  006 and a half: (talking normally) Compare that to: #line:0ca8967 
+  <<pose agent006 enthusiastic_sweeping_elbow>>
+  <<animate_slot 006 sway_back_and_forth while_talking loop>>
+  006 and a half: (singing) Willie, oh, Willie, is your Willie for fruit. #line:0936aa0 
+  <<pose agent006 relaxed_hands_at_hip>>
+  006 and a half: (talking normally) See, it makes no sense to call you Willie. #line:04f9247 
+  <<pose merchant defeated>>
+  Merchant: What do you want? #line:0dabc08 
+  <<set $merchant_talked_with_006_before to true>>
+<<else>>
+  <<pose agent006 relaxed_hands_at_hip>>
+  <<pose merchant defeated>>
+  006 and a half: Hello, fruitman! #line:05288b3 
+  Merchant: Oh, you again... #line:01e59f5 
+<<endif>>
+
+===

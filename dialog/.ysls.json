@@ -1,0 +1,101 @@
+{
+  "commands": [
+    {
+      "yarnName": "pose",
+      "documentation": "Set a character's pose. Held until changed.",
+      "parameters": [
+        {
+          "name": "character",
+          "documentation": "Character ID e.g. agent006, merchant",
+          "type": "string"
+        },
+        {
+          "name": "pose_name",
+          "documentation": "Pose to apply",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "yarnName": "turn",
+      "documentation": "Set the direction a character faces. Persists until changed.",
+      "parameters": [
+        {
+          "name": "character",
+          "type": "string"
+        },
+        {
+          "name": "direction",
+          "documentation": "to_start or to_end",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "yarnName": "slot",
+      "documentation": "Assign a character to a fractional stage position e.g. 1/3.",
+      "parameters": [
+        {
+          "name": "character",
+          "type": "string"
+        },
+        {
+          "name": "position",
+          "documentation": "Fractional position: 1/2, 2/2, 1/3, 2/3, 3/3 etc.",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "yarnName": "animate_slot",
+      "documentation": "Play a flavour animation on a character's slot without moving it.",
+      "parameters": [
+        {
+          "name": "character",
+          "type": "string"
+        },
+        {
+          "name": "animation",
+          "documentation": "Animation name e.g. slide_in_from_end, quick_bounce, sway_back_and_forth",
+          "type": "string"
+        },
+        {
+          "name": "timing",
+          "documentation": "while_talking, before_talking, or play_now",
+          "type": "string"
+        },
+        {
+          "name": "playback",
+          "documentation": "once or loop",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "yarnName": "move_slot",
+      "documentation": "Move a character to a new fractional stage position.",
+      "parameters": [
+        {
+          "name": "character",
+          "type": "string"
+        },
+        {
+          "name": "animation",
+          "documentation": "Movement style e.g. gentle_walk_to, snap_to, slide_to",
+          "type": "string"
+        },
+        {
+          "name": "position",
+          "documentation": "Target fractional position e.g. 1/3, 2/3",
+          "type": "string"
+        },
+        {
+          "name": "timing",
+          "documentation": "while_talking, before_talking, or play_now",
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "functions": []
+}
