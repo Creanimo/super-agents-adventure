@@ -18,13 +18,17 @@ Any license notice or attribution required by the License must also
 include this Commons Clause License Condition notice.
 
 Software: Super Agents Adventure
+
 License: Apache 2.0
+
 Licensor: Ferdinand Engländer
 
 ---
 
 Apache License
+
 Version 2.0, January 2004
+
 http://www.apache.org/licenses/
 
    TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
